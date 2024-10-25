@@ -1,23 +1,19 @@
 "use client";
 
-import Footer from "@/components/ui/Footer";
-import NavBar from "@/components/ui/NavBar";
-import localFont from "next/font/local";
-import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { useState } from "react";
+import Footer from "@/components/ui/Footer";
 import MobileNavBar from "@/components/ui/MobileNavBar";
+import NavBar from "@/components/ui/NavBar";
+import { Poppins } from "next/font/google";
+import { useState } from "react";
+import "./globals.css";
 import ServerLayout from "./serverLayout";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const poppins = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export default function RootLayout({
@@ -39,29 +35,27 @@ export default function RootLayout({
 
   return (
     <ServerLayout>
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <div className="min-h-screen flex flex-col items-center justify-between ">
-            <header className="w-full sticky top-0 left-0 p-4 bg-background text-foreground border-b-2 border-foreground z-50">
-              <NavBar onHamClick={onHamClick} />
-              {mobileShow && <MobileNavBar onHamClick={onHamClick} />}
-            </header>
-            <div className="bg-background min-h-screen w-full" id="#">
-              {children}
+      <html lang="en">
+        <body className={`${poppins.className} antialiased`}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <div className="min-h-screen flex flex-col items-center justify-between ">
+              <header className="w-full sticky top-0 left-0 p-4 bg-background text-foreground border-b-2 border-foreground z-50">
+                <NavBar onHamClick={onHamClick} />
+                {mobileShow && <MobileNavBar onHamClick={onHamClick} />}
+              </header>
+              <div className="bg-background min-h-screen w-full" id="#">
+                {children}
+              </div>
+              <Footer />
             </div>
-            <Footer />
-          </div>
-        </ThemeProvider>
-      </body>
-    </html>
+          </ThemeProvider>
+        </body>
+      </html>
     </ServerLayout>
   );
 }
