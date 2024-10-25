@@ -31,7 +31,7 @@ function NavBar({ onHamClick }: { onHamClick: () => void }) {
         <Link href={"/#blog"}>Blog</Link>
         <Link href={"/contact"}>Contact</Link>
       </div>
-      <div className="right flex items-center justify-evenly md:flex-none">
+      <div className="right flex items-center space-x-2 md:flex-none">
         <div className="hidden md:block">
         <SocialIcons />
         </div>

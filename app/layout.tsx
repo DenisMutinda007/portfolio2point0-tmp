@@ -54,7 +54,7 @@ export default function RootLayout({
               <NavBar onHamClick={onHamClick} />
               {mobileShow && <MobileNavBar onHamClick={onHamClick} />}
             </header>
-            <div className="p-4 bg-background min-h-screen w-full" id="#">
+            <div className="bg-background min-h-screen w-full" id="#">
               {children}
             </div>
             <Footer />
