@@ -9,16 +9,13 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col space-y-5 text-foreground">
+    <div className="flex flex-col space-y-5 text-foreground bg-background">
       <HeroSection />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <section id="">
-          <p>Hello, world from Framer Motion!</p>
-        </section>
         <section id="">
           <Services />
         </section>
@@ -30,7 +27,7 @@ export default function Home() {
         </section>
         <div
           id="toolsNskills"
-          className="about bg-gray-800 text-gray-100 p-5 pb-32 md:relative"
+          className="aboutp-5 pb-32 md:relative"
         >
           <h1 className="text-3xl font-semibold text-center tracking-wider">
             Skillset

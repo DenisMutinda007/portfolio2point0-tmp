@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { EnvelopeOpenIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "@/components/ui/button";
+import DenisMutungaMutinda from "@/public/images/Suit.png";
 
 export default function HeroSection() {
   return (
@@ -34,11 +35,13 @@ export default function HeroSection() {
           </div>
           <div className="right flex justify-center p-2 md:w-1/2">
             <Image
-              src={"/images/Suit.png"}
+              src={DenisMutungaMutinda}
               alt={"Denis Mutunga Mutinda"}
               className="cursor-pointer hover:shadow-outline rounded-full object-cover object-center h-96 w-96 md:relative md:top-20"
-              width={250}
-              height={250}
+              width={384}
+              height={384}
+              quality={100}
+              placeholder="blur"
             />
           </div>
         </div>

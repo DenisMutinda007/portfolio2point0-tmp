@@ -5,7 +5,7 @@
 /* Change this for controlling theme on page load - Default theme */
 @media (prefers-color-scheme: light) { 
   :root {
-    --background: #0a0a0a;
+    --background: #1f2937;
     --foreground: #ededed;
   }
 }
