@@ -19,17 +19,17 @@ function NavBar({ onHamClick }: { onHamClick: () => void }) {
   return (
     <nav className="w-full flex justify-between items-center">
       <div className="left flex-none">
-        <h1 className="text-2xl">
+        <h1 className="text-xl font-bold">
           <Link href={"/"}>DenisWritesCode</Link>
         </h1>
       </div>
       <div className="middle hidden md:flex-1 md:flex md:space-x-2 md:px-4 md:justify-around sm:block">
-        <Link href={"/#services"}>Services</Link>
-        <Link href={"/#toolsNskills"}>Tools/SkillSet</Link>
-        <Link href={"/#projects"}>Projects</Link>
-        <Link href={"/#experience"}>Experience</Link>
-        <Link href={"/#blog"}>Blog</Link>
-        <Link href={"/contact"}>Contact</Link>
+        <Link className="hover:uppercase hover:underline" href={"/#services"}>Services</Link>
+        <Link className="hover:uppercase hover:underline" href={"/#toolsNskills"}>Tools/SkillSet</Link>
+        <Link className="hover:uppercase hover:underline" href={"/#projects"}>Projects</Link>
+        <Link className="hover:uppercase hover:underline" href={"/#experience"}>Experience</Link>
+        <Link className="hover:uppercase hover:underline" href={"/#blog"}>Blog</Link>
+        <Link className="hover:uppercase hover:underline" href={"/contact"}>Contact</Link>
       </div>
       <div className="right flex items-center space-x-2 md:flex-none">
         <div className="hidden md:block">
