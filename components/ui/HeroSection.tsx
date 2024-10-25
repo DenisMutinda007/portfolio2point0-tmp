@@ -34,8 +34,9 @@ export default function HeroSection() {
           </div>
           <div className="right flex justify-center p-2 md:w-1/2">
             <Image
-              src={"/logos/WhiteOnBlack.png"}
-              alt={"Client Image"}
+              src={"/images/Suit.png"}
+              alt={"Denis Mutunga Mutinda"}
+              className="cursor-pointer hover:shadow-outline rounded-full object-cover object-center h-96 w-96 md:relative md:top-20"
               width={250}
               height={250}
             />
