@@ -5,6 +5,7 @@ import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { useTheme } from "next-themes";
 
 import { Button } from "@/components/ui/button";
+import { SocialIcons } from "@/components/ui/SocialIcons";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -31,23 +32,7 @@ function NavBar({ onHamClick }: { onHamClick: () => void }) {
         <Link href={"/contact"}>Contact</Link>
       </div>
       <div className="right flex items-center justify-evenly md:flex-none">
-        <li className="flex cursor-pointer border border-white">
-          <ul className="py-1 px-3">
-            <Link href="https://twitter.com/DenisWritesCode/">
-              <i className="cursor-pointer fab fa-twitter fa-lg"></i>
-            </Link>
-          </ul>
-          <ul className="py-1 px-3">
-            <Link href="https://www.linkedin.com/in/denis-mutinda-241500191/">
-              <i className="cursor-pointer fab fa-linkedin fa-lg"></i>
-            </Link>
-          </ul>
-          <ul className="py-1 px-3">
-            <Link href="mailto:deniswritescode@gmail.com?subject=Mail from Portfolio">
-              <i className="cursor-pointer fas fa-envelope-open-text fa-lg"></i>
-            </Link>
-          </ul>
-        </li>
+        <SocialIcons />
         <div className="menu block sm:hidden" onClick={onHamClick}>
           <a href="#home">
             <svg

@@ -38,6 +38,7 @@ export default function RootLayout({
   };
 
   return (
+    <ServerLayout>
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -54,12 +55,13 @@ export default function RootLayout({
               {mobileShow && <MobileNavBar onHamClick={onHamClick} />}
             </header>
             <div className="p-4 bg-background min-h-screen w-full" id="#">
-              <ServerLayout>{children}</ServerLayout>
+              {children}
             </div>
             <Footer />
           </div>
         </ThemeProvider>
       </body>
     </html>
+    </ServerLayout>
   );
 }
