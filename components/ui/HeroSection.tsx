@@ -5,14 +5,15 @@ import Image from "next/image";
 import { EnvelopeOpenIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "@/components/ui/button";
 import DenisMutungaMutinda from "@/public/images/Suit.png";
+import { BorderBeam } from "@/components/ui/border-beam.tsx";
 
 export default function HeroSection() {
   return (
     <div className="min-h-screen flex justify-center border-b-2 border-foreground">
       <section id="hero">
-        <div className="top-content bg-background text-foreground flex flex-col-reverse md:flex-row md:items-center">
-          <div className="left flex flex-col text-center mt-2 md:space-y-5 md:w-1/2 md:relative md:pt-44 md:pl-16 px-3">
-            <h1 className="text-4xl font-semibold">
+        <div className="top-content bg-background text-foreground flex flex-col-reverse md:flex-row md:items-center pb-2">
+          <div className="left flex flex-col text-center mt-2 space-y-4 md:space-y-10 md:w-1/2 md:relative md:pt-44 md:pl-16 px-3">
+            <h1 className="text-4xl font-semibold pt-2">
               Turning Your Ideas into Reality
             </h1>
             <h2 className="text-3xl mt-2">
@@ -29,11 +30,11 @@ export default function HeroSection() {
             </p>
 
             
-            <div className="pt-10">
-              <Link href={"/contact"} className={buttonVariants({ variant: "default", size: "lg"})}>Contact Me <EnvelopeOpenIcon /></Link>
+            <div className="md:pt-10">
+              <Link href={"/contact"} className={`relative ${buttonVariants({ variant: "default", size: "lg"})}`}>Contact Me <EnvelopeOpenIcon /><BorderBeam /></Link>
             </div>
           </div>
-          <div className="right flex justify-center p-2 md:w-1/2 md:mt-10">
+          <div className="right flex justify-center p-2 md:w-1/2">
             <Image
               src={DenisMutungaMutinda}
               alt={"Denis Mutunga Mutinda"}
