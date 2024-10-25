@@ -43,12 +43,12 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <div className="min-h-screen flex flex-col items-center justify-between ">
+            <div className="flex flex-col items-center justify-between ">
               <header className="w-full sticky top-0 left-0 p-4 bg-background text-foreground border-b-2 border-foreground z-50">
                 <NavBar onHamClick={onHamClick} />
                 {mobileShow && <MobileNavBar onHamClick={onHamClick} />}
               </header>
-              <div className="bg-background min-h-screen w-full" id="#">
+              <div className="bg-background w-full" id="#">
                 {children}
               </div>
               <Footer />

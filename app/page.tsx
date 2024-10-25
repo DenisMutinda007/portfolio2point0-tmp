@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col space-y-5 text-foreground bg-background">
+    <div className="flex flex-col space-y-5 text-foreground bg-background min-h-screen">
       <HeroSection />
       <motion.div
         initial={{ opacity: 0 }}

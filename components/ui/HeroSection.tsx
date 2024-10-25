@@ -8,10 +8,10 @@ import DenisMutungaMutinda from "@/public/images/Suit.png";
 
 export default function HeroSection() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex justify-center border-b-2 border-foreground">
       <section id="hero">
         <div className="top-content bg-background text-foreground flex flex-col-reverse md:flex-row md:items-center md:-mb-28">
-          <div className="left flex flex-col text-center mt-2 md:w-1/2 md:relative md:top-20 md:pl-16 px-3">
+          <div className="left flex flex-col text-center mt-2 md:space-y-5 md:w-1/2 md:relative md:pt-44 md:pl-16 px-3">
             <h1 className="text-4xl font-semibold">
               Turning Your Ideas into Reality
             </h1>
@@ -29,11 +29,11 @@ export default function HeroSection() {
             </p>
 
             
-            <div className="">
+            <div className="pt-10">
               <Link href={"/contact"} className={buttonVariants({ variant: "default", size: "lg"})}>Contact Me <EnvelopeOpenIcon /></Link>
             </div>
           </div>
-          <div className="right flex justify-center p-2 md:w-1/2">
+          <div className="right flex justify-center p-2 md:w-1/2 md:mt-10">
             <Image
               src={DenisMutungaMutinda}
               alt={"Denis Mutunga Mutinda"}
