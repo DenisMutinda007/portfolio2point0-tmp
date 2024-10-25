@@ -17,12 +17,12 @@ function NavBar({ onHamClick }: { onHamClick: () => void }) {
 
   return (
     <nav className="w-full flex justify-between items-center">
-      <div className="left">
+      <div className="left flex-none">
         <h1 className="text-2xl">
           <Link href={"/"}>DenisWritesCode</Link>
         </h1>
       </div>
-      <div className="middle hidden sm:block">
+      <div className="middle hidden md:flex-1 md:flex md:space-x-2 md:px-4 md:justify-around sm:block">
         <Link href={"/#services"}>Services</Link>
         <Link href={"/#toolsNskills"}>Tools/SkillSet</Link>
         <Link href={"/#projects"}>Projects</Link>
@@ -30,8 +30,8 @@ function NavBar({ onHamClick }: { onHamClick: () => void }) {
         <Link href={"/#blog"}>Blog</Link>
         <Link href={"/contact"}>Contact</Link>
       </div>
-      <div className="right flex items-center justify-evenly">
-        <li className="flex cursor-pointer">
+      <div className="right flex items-center justify-evenly md:flex-none">
+        <li className="flex cursor-pointer border border-white">
           <ul className="py-1 px-3">
             <Link href="https://twitter.com/DenisWritesCode/">
               <i className="cursor-pointer fab fa-twitter fa-lg"></i>
