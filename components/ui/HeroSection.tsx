@@ -64,7 +64,7 @@ export default function HeroSection() {
         {/* Technologies VelocityScroll Slider */}
         <div className="border-y-2 border-foreground inline mt-10 p-4">
           <VelocityScroll
-            text={`Web & Mobile App Design 🤓 Web Development 🤓 Mobile App Development 🤓 E-Commerce 🤓 Wordpress 🤓 SEO & Digital Marketing 🤓 UI, UX & User Research 🤓 DevOps 🤓 Wireframing 🤓 Robotics & Home Automation 🤓 Internet Of Things 🤓 Dashboard 🤓 Notion Dashboard & Scripts`}
+            text={`Web & Mobile App Design 👨‍💻 Web Development 👨‍💻 Mobile App Development 👨‍💻 E-Commerce 👨‍💻 Wordpress 👨‍💻 SEO & Digital Marketing 👨‍💻 UI, UX & User Research 👨‍💻 DevOps 👨‍💻 Wireframing 👨‍💻 Robotics & Home Automation 👨‍💻 Internet Of Things 👨‍💻  Dashboard 👨‍💻  Notion Dashboard & Scripts`}
             default_velocity={0.3}
             className="font-display text-center text-3xl font-semibold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-3xl md:leading-[3rem]"
           />
