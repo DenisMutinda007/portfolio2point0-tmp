@@ -12,8 +12,10 @@ export default function HeroSection() {
   return (
     <div className="min-h-screen max-w-full overflow-hidden border-b-2 border-foreground">
       <section id="hero" className="flex flex-col justify-center">
+        {/* Text and Image */}
         <div className="textAndImage flex justify-center">
           <div className="top-content bg-background text-foreground flex flex-col-reverse md:flex-row md:items-center pb-2">
+            {/* Text on the left hand side */}
             <div className="left flex flex-col text-center space-y-4 md:space-y-10 md:w-1/2 md:relative md:pt-24 md:pl-16 px-3">
               <h1 className="text-4xl font-semibold pt-2">
                 Turning Your Ideas into Reality
@@ -36,7 +38,7 @@ export default function HeroSection() {
                 <Link
                   href={"/contact"}
                   className={`${buttonVariants({
-                    variant: "outline",
+                    variant: "default",
                     size: "lg",
                   })}`}
                 >
@@ -45,6 +47,7 @@ export default function HeroSection() {
                 </Link>
               </div>
             </div>
+            {/* Circle Image */}
             <div className="right flex justify-center p-2 md:w-1/2">
               <Image
                 src={DenisMutungaMutinda}
@@ -69,8 +72,8 @@ export default function HeroSection() {
       </section>
       <div className="arrowDown">
         <div className="hidden md:relative md:flex md:justify-center md:items-center md:pt-5">
-          <span className="w-[3px] h-[23px] bg-white rounded-md m-[6px] animate-move transform rotate-[-45deg]"></span>
-          <span className="w-[3px] h-[23px] bg-white rounded-md m-[6px] animate-move transform rotate-[45deg]"></span>
+          <span className="w-[3px] h-[23px] bg-foreground rounded-md m-[6px] animate-move transform rotate-[-45deg]"></span>
+          <span className="w-[3px] h-[23px] bg-foreground rounded-md m-[6px] animate-move transform rotate-[45deg]"></span>
         </div>
       </div>
     </div>

@@ -5,7 +5,8 @@
 /* Change this for controlling theme on page load - Default theme */
 @media (prefers-color-scheme: light) { 
   :root {
-    --background: 0 0% 93%;
+    /* --background: 0 0% 93%; */
+    --background: 0 0% 99%;
     --foreground: 210 22% 17%;
   }
 }
@@ -22,7 +23,7 @@ body {
 
 @layer base {
   :root {
-    --background: 0 0% 93%;
+    --background: 0 0% 99%;
     --foreground: 210 22% 17%;
     --card: 0 0% 93%;
     --card-foreground: 210 22% 17%;
