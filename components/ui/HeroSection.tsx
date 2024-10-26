@@ -42,7 +42,7 @@ export default function HeroSection() {
                     size: "lg",
                   })}`}
                 >
-                  Contact Me <EnvelopeOpenIcon />
+                  Hire Me <EnvelopeOpenIcon />
                   {/* <BorderBeam /> */}
                 </Link>
               </div>
