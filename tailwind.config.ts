@@ -57,14 +57,20 @@ const config: Config = {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		animation: {
-  			'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear'
+  			'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear',
+			  'move': 'move 1.1s infinite ease-in-out',
   		},
   		keyframes: {
   			'border-beam': {
   				'100%': {
   					'offset-distance': '100%'
   				}
-  			}
+  			},
+			  move: {
+				'0%': { marginTop: '0px' },
+				'50%': { marginTop: '30px' },
+				'100%': { marginTop: '0px' },
+			  },
   		}
   	}
   },
