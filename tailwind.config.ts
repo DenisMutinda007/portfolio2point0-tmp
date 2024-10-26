@@ -68,7 +68,7 @@ const config: Config = {
   			},
 			  move: {
 				'0%': { marginTop: '0px' },
-				'50%': { marginTop: '30px' },
+				'50%': { marginTop: '20px' },
 				'100%': { marginTop: '0px' },
 			  },
   		}

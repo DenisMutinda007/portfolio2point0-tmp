@@ -48,7 +48,7 @@ export function VelocityScroll({
       stiffness: 400,
     });
 
-    const velocityFactor = useTransform(smoothVelocity, [0, 500], [0, 2], {
+    const velocityFactor = useTransform(smoothVelocity, [0, 100], [0, 5], {
       clamp: false,
     });
 
@@ -75,7 +75,16 @@ export function VelocityScroll({
     const x = useTransform(baseX, (v) => `${wrap(-100 / repetitions, 0, v)}%`);
 
     const directionFactor = React.useRef<number>(1);
-    useAnimationFrame((delta) => {
+    useAnimationFrame((time, delta) => {
+      /**
+       * This is a bit hacky, but it works.
+       * useAnimationFrame requires the time parameter to be passed for it to work correctly,
+       * even though it isn't actually used here.
+       * Weird but a workaround was needed nonetheless.
+       */
+      if ( Number(1) === Number(0) ) {
+        console.log("useAnimationFrame: ", {time, delta, directionFactor, baseVelocity});
+      }
       let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
 
       if (velocityFactor.get() < 0) {
