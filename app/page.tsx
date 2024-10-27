@@ -16,7 +16,10 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <section id="">
+        <section
+          id="services"
+          className="bg-foreground text-background border-8 border-red-500 md:pt-24"
+        >
           <Services />
         </section>
         <section id="">
@@ -25,10 +28,7 @@ export default function Home() {
         <section id="">
           <EducationAndWork />
         </section>
-        <div
-          id="toolsNskills"
-          className="aboutp-5 pb-32 md:relative"
-        >
+        <div id="toolsNskills" className="aboutp-5 pb-32 md:relative">
           <h1 className="text-3xl font-semibold text-center tracking-wider">
             Skillset
           </h1>
