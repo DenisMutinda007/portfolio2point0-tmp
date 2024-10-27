@@ -1,6 +1,6 @@
 function Blog() {
   return (
-    <div>Blog</div>
+    <div className="max-w-full overflow-hidden flex flex-col content">Blog</div>
   )
 }
 

@@ -48,10 +48,10 @@ export default function RootLayout({
                 <NavBar onHamClick={onHamClick} />
                 {mobileShow && <MobileNavBar onHamClick={onHamClick} />}
               </header>
-              <div className="bg-background w-full" id="#">
+              <div className="bg-background max-w-full" id="home">
                 {children}
+                <Footer />
               </div>
-              <Footer />
             </div>
           </ThemeProvider>
         </body>
