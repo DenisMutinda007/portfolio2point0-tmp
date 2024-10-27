@@ -58,7 +58,9 @@ const config: Config = {
   		},
   		animation: {
   			'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear',
-			  'move': 'move 1.1s infinite ease-in-out',
+  			move: 'move 1.1s infinite ease-in-out',
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out'
   		},
   		keyframes: {
   			'border-beam': {
@@ -66,11 +68,33 @@ const config: Config = {
   					'offset-distance': '100%'
   				}
   			},
-			  move: {
-				'0%': { marginTop: '0px' },
-				'50%': { marginTop: '20px' },
-				'100%': { marginTop: '0px' },
-			  },
+  			move: {
+  				'0%': {
+  					marginTop: '0px'
+  				},
+  				'50%': {
+  					marginTop: '20px'
+  				},
+  				'100%': {
+  					marginTop: '0px'
+  				}
+  			},
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
+  			}
   		}
   	}
   },
