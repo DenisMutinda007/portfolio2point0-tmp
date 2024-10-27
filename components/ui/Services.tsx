@@ -1,3 +1,5 @@
+"use client";
+
 function Services() {
   return (
     <div id="services"className="max-w-full overflow-hidden flex flex-col content">
@@ -19,6 +21,7 @@ function Services() {
           </div>
         </section>
       </div>
+      
     </div>
   );
 }
