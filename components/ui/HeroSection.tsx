@@ -93,11 +93,11 @@ export default function HeroSection() {
         </section>
         {/* Technologies VelocityScroll Slider */}
         <div className="flex-none border-2 border-foreground mt-10 p-4">
-          <div className="">
+          <div className="text-foreground">
             <VelocityScroll
-              text={`TypeScript 👨‍💻 Rust 👨‍💻 C & C++ 👨‍💻 Node.js 👨‍💻 Express.js 👨‍💻 Solidity 👨‍💻 Angular 👨‍💻 Tailwind CSS 👨‍💻 Next.js 👨‍💻React-Native 👨‍💻 React 👨‍💻 Next UI 👨‍💻 Flutter 👨‍💻 Electron.js 👨‍💻 Python|👨‍💻Vanilla JavaScript👨‍💻 Php👨‍💻 Python 👨‍💻`}
+              text={`TypeScript 👨‍💻 Rust 👨‍💻 C & C++ 👨‍💻 Node.js 👨‍💻 Express.js 👨‍💻 Solidity 👨‍💻 Angular 👨‍💻 Tailwind CSS 👨‍💻 Next.js 👨‍💻 React-Native 👨‍💻 React 👨‍💻 Next UI 👨‍💻 Flutter 👨‍💻 Electron.js 👨‍💻 Python 👨‍💻 Vanilla JavaScript 👨‍💻 Php 👨‍💻 Python 👨‍💻`}
               default_velocity={0.3}
-              className="font-display text-center text-3xl font-semibold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-3xl md:leading-[3rem]"
+              className="font-display text-center text-3xl font-semibold tracking-[-0.02em] text-foreground drop-shadow-sm md:text-3xl md:leading-[3rem]"
             />
           </div>
         </div>
