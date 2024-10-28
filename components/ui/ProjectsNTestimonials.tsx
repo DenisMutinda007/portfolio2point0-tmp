@@ -28,8 +28,8 @@ const ProjectsAndTestimonials = () => {
             with me.
           </p>
         </div>
-      <div className="">
-        <Accordion type="single" collapsible className="w-full">
+      <div className="md:hidden">
+        <Accordion type="single" collapsible defaultValue="item-1" orientation="vertical" className="w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger>Is it accessible?</AccordionTrigger>
             <AccordionContent>
