@@ -1,6 +1,6 @@
 "use client";
 
-import EducationAndWork from "@/components/ui/EducationNWork";
+// import EducationAndWork from "@/components/ui/EducationNWork";
 import Services from "@/components/ui/Services";
 import HeroSection from "@/components/ui/HeroSection";
 import SkillSet from "@/components/ui/SkillSet";
@@ -12,7 +12,7 @@ export default function Home() {
       <HeroSection />
       <Services />
       <SkillSet />
-      <EducationAndWork />
+      {/* <EducationAndWork /> */}
       <ProjectsAndTestimonials />
     </div>
   );

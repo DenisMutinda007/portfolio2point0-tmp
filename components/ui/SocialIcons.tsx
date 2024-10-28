@@ -10,22 +10,31 @@ export function SocialIcons() {
     <div className="relative">
       <Dock magnification={60} distance={100}>
         <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
-          <Link href="https://www.linkedin.com/in/denis-mutinda-241500191/" target="_blank">
+          <Link
+            href="https://www.linkedin.com/in/denis-mutinda-241500191/"
+            target="_blank"
+          >
             <Icons.linkedin className="size-full" />
           </Link>
         </DockIcon>
         <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
-        <Link href="https://x.com/deniswritescode" target="_blank">
+          <Link href="https://x.com/deniswritescode" target="_blank">
             <Icons.x className="size-full" />
           </Link>
         </DockIcon>
-        <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
-        <Link href="https://discordapp.com/users/deniswritescode" target="_blank">
+        <DockIcon className="bg-black/20 dark:bg-white/10 p-3">
+          <Link
+            href="https://discordapp.com/users/deniswritescode"
+            target="_blank"
+          >
             <Icons.discord className="size-full" />
           </Link>
         </DockIcon>
         <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
-        <Link href="https://www.reddit.com/user/DepthApprehensive845/" target="_blank">
+          <Link
+            href="https://www.reddit.com/user/DepthApprehensive845/"
+            target="_blank"
+          >
             <Icons.reddit className="size-full" />
           </Link>
         </DockIcon>

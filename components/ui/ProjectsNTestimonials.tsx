@@ -28,7 +28,7 @@ const ProjectsAndTestimonials = () => {
             with me.
           </p>
         </div>
-      <div className="md:hidden">
+      <div className="hidden">
         <Accordion type="single" collapsible defaultValue="item-1" orientation="vertical" className="w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger>Is it accessible?</AccordionTrigger>
@@ -59,7 +59,7 @@ const ProjectsAndTestimonials = () => {
           <div className="client-testimonial flex w-11/12 mx-auto mt-5 items-center">
             <div className="client hidden md:block mx-3">
               <Image
-                src={"/logos/WhiteOnBlack.png"}
+                src={"/images/Logicae.jpg"}
                 alt={"Client Image"}
                 width={250}
                 height={250}
@@ -68,7 +68,7 @@ const ProjectsAndTestimonials = () => {
             <div className="testimonial bg-gray-100 flex flex-col w-11/12 mx-auto my-3 rounded-xl px-2 md:flex-row">
               <div className="photo my-auto mx-auto md:w-1/5">
                 <Image
-                  src={"/logos/WhiteOnBlack.png"}
+                  src={"/images/Ced.jpg"}
                   alt={"Client Image"}
                   width={250}
                   height={250}
@@ -94,9 +94,9 @@ const ProjectsAndTestimonials = () => {
                       Co-Founder & CEO of Logicae Science
                     </p>
                   </div>
-                  <div className=" right text-gray-800 pr-5">
+                  {/* <div className=" right text-gray-800 pr-5">
                     <a href="https://logicae.science/">View Work</a>
-                  </div>
+                  </div> */}
                 </figcaption>
               </div>
             </div>
@@ -104,7 +104,7 @@ const ProjectsAndTestimonials = () => {
           <div className="client-testimonial flex w-11/12 mx-auto mt-5 items-center">
             <div className="client hidden md:block mx-3">
               <Image
-                src={"/logos/WhiteOnBlack.png"}
+                src={"/images/sekani_logo.jpg"}
                 alt={"Client Image"}
                 width={250}
                 height={250}
@@ -113,7 +113,7 @@ const ProjectsAndTestimonials = () => {
             <div className="testimonial bg-gray-100 flex flex-col w-11/12 mx-auto my-3 rounded-xl px-2 md:flex-row">
               <div className="photo my-auto mx-auto md:w-1/5">
                 <Image
-                  src={"/logos/WhiteOnBlack.png"}
+                  src={"/images/Lum.jpeg"}
                   alt={"Client Image"}
                   width={250}
                   height={250}
@@ -133,9 +133,9 @@ const ProjectsAndTestimonials = () => {
                     <p className="name  text-gray-700">Lumona Mulengwa</p>
                     <p className="title text-gray-500 text-sm">CTO Sekani</p>
                   </div>
-                  <div className=" right text-gray-800 pr-5">
+                  {/* <div className=" right text-gray-800 pr-5">
                     <a href="https://sekani.tech/">View Work</a>
-                  </div>
+                  </div> */}
                 </figcaption>
               </div>
             </div>

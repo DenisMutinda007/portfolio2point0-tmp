@@ -50,9 +50,6 @@ function Services() {
               that not only will I deliver in time but I will also deliver the
               best possible solution.
             </p>
-            <p>
-            By adhering strictly to the principle of Iterative Development you are assured that not only will I delvier in time but I will also deliver the best possible solution.
-            </p>
             <p className="">
               We help ambitious businesses succeed by creating high-quality
               products, services, and digital experiences that exceed their

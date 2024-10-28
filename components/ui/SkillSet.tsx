@@ -1,9 +1,12 @@
 "use client";
 
 import Image from "next/image";
+// import { useTheme } from "next-themes";
+// import { MagicCard } from "@/components/ui/magic-card";
 // import { motion } from "framer-motion";
 
 function SkillSet() {
+  // const { theme } = useTheme();
   return (
     // <motion.div
     //     initial={{ opacity: 0 }}
@@ -11,24 +14,62 @@ function SkillSet() {
     //     transition={{ duration: 0.5 }}
     //     className="border-8 border-red-500"
     //   ></motion.div>
-    <div id="toolsNSkills" className="max-w-full overflow-hidden flex flex-col content bg-foreground text-background p-5 md:pt-14">
-      <h1 className="text-3xl font-semibold text-center tracking-wider">
-        Skillset
-      </h1>
-      <p className="text-xl md:w-2/3 text-center mx-auto">
-        With perfection as the end goal, I know I have attained it, not when I
-        have nothing to add, rather when there is nothing to remove. I iterate
-        over your project for <strong>Perfection</strong>.
-      </p>
-      <p className="text-xl md:w-2/3 text-center mx-auto">
-        By adhering strictly to the principle of{" "}
-        <span className="italic underline">Iterative Development</span> you are
-        assured that not only will I deliver in time but I will also deliver the
-        best possible solution.
-      </p>
-      <div className=" mt-5 flex align-center justify-center md:absolute md:mt-24 md:left-1/2 z-10">
+    <div
+      id="toolsNSkills"
+      className="flex flex-col items-center bg-foreground text-background p-5 md:pt-24"
+    >
+      <div className="intro pb-5 text-center space-y-5">
+        <h1 className="text-4xl font-bold underline">Skillset</h1>
+        <p className="text-xl w-11/12 mx-auto">
+          By adhering strictly to the principle of&nbsp;
+          <span className="italic underline">Iterative Development</span> you
+          are assured that not only will I deliver in time but I will also
+          deliver the best possible solution.
+        </p>
+      </div>
+      {/* Magic Cards */}
+      {/* <div
+        className={
+          "w-full flex flex-col md:flex-row gap-4 mb-5"
+        }
+      >
+        <MagicCard
+          className="cursor-pointer flex-col items-center justify-center shadow-2xl whitespace-nowrap text-4xl"
+          gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
+        >
+          <p className="text-xl font-bold underline">
+            Full-stack Web Development
+          </p>
+          <div className="flex items-center justify-center">
+            <Image
+              src={"/images/WebDevelopment.png"}
+              alt={"Client Image"}
+              width={250}
+              height={250}
+            />
+            <p className="">
+              By adhering strictly to the principle of&nbsp;
+              <span className="italic underline">
+                Iterative Development
+              </span>{" "}
+              you are assured that not only will I deliver in time but I will
+              also deliver the best possible solution.
+            </p>
+          </div>
+        </MagicCard>
+        <MagicCard
+          className="cursor-pointer flex-col items-center justify-center shadow-2xl whitespace-nowrap text-4xl"
+          gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
+        >
+          001
+        </MagicCard>
+      </div> */}
+
+      {/* GitHub Button */}
+      <div className="pt-5 flex align-center justify-center md:left-1/2">
         <a
           href="https://github.com/DenisWritesCode/"
+          target="_blank"
           className="flex align-center justify-center text-xl text-gray-800 bg-gray-100 font-semibold rounded-2xl p-3"
         >
           Github{" "}
@@ -44,116 +85,100 @@ function SkillSet() {
           </svg>
         </a>
       </div>
-      <div className="skills-wrapper flex flex-col md:flex-row md:w-11/12 mx-auto">
-          <div className="skill mb-5 -mt-20 pt-1 md:w-1/3 md:pt-0">
-            <div className="skill-contents flex flex-col items-center px-5 -mt-16 relative">
-              <Image
-                src={"/logos/WhiteOnBlack.png"}
-                alt={"Client Image"}
-                width={250}
-                height={250}
-              />
-              <div className="p-6 bg-gray-100 text-gray-800 shadow-2xl mx-auto flex-col flex rounded-t-lg">
-                <h2 className="mx-auto text-2xl text-gray-800 pt-14 pb-1 font-semibold uppercase tracking-wider">
-                  Web Development
-                </h2>
-                <p className="text-lg">
-                  With a technical knowledge in HTML, CSS, Vanilla Javascript
-                  and various Javascript frameworks like React and NodeJs, you
-                  can be sure your project will be developed for real world use.
+      {/* Skill Cards */}
+      <div className="skills-wrapper w-full h-fit flex flex-col md:flex-row mx-auto md:space-x-5 md:items-end">
+        <div className="skill pt-3 md:w-1/3 md:h-full">
+          <div className="skill-contents text-foreground bg-background flex flex-col items-center px-5 relative">
+            <Image
+              src={"/images/WebDevelopment.png"}
+              alt={"Client Image"}
+              width={350}
+              height={350}
+            />
+            <div className="p-6 shadow-2xl mx-auto flex-col flex rounded-t-lg">
+              <h2 className="mx-auto text-2xl text-gray-800 pt-14 pb-1 font-semibold uppercase tracking-wider">
+                Web Development
+              </h2>
+              <p className="text-lg">
+                For world leading user experiences on the web, be it via mobile or desktop screen, I promise to deliver the best possible solution.
+              </p>
+              <div className="stack">
+                <h3 className="mt-2 mb-1 text-xl font-semibold text-center">
+                  Web Technologies Used
+                </h3>
+                <p>
+                  HTML, CSS, Tailwind CSS, Bootstrap, Vanilla Javascript, React, Angular, Next.js, Next UI, ShadcnUI, Framer-motion, NodeJS & Rust
                 </p>
-                <div className="stack">
-                  <h3 className="mt-2 mb-1 text-xl font-semibold text-center">
-                    Web Technologies Used
-                  </h3>
-                  <p>
-                    <span className="font-semibold text-lg">Front-End - </span>
-                    HTML, CSS, Tailwind CSS, Bootstrap, Vanilla Javascript &
-                    React.
-                  </p>
-                  <p>
-                    <span className="font-semibold text-lg">Back-End - </span>
-                    NodeJS, Flask & Django
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="skill pt-3 md:w-1/3 md:pt-2">
-            <div className="skill-contents flex flex-col items-center px-5 -mt-16 md:-mt-24 relative">
-              <Image
-                src={"/logos/WhiteOnBlack.png"}
-                alt={"Client Image"}
-                width={250}
-                height={250}
-              />
-              <div className=" p-6 bg-gray-100 text-gray-800 shadow-2xl mx-auto flex-col flex rounded-t-lg">
-                <h2 className="mx-auto text-2xl text-gray-800 pt-14 pb-1 font-semibold uppercase tracking-wider">
-                  Mobile Development
-                </h2>
-                <p className="text-lg">
-                  Be it writing native code for a single codebase or even
-                  cross-platform mobile development, you can rest assured that
-                  Denis has got you.
-                </p>
-                <div className="stack">
-                  <h3 className="mt-2 mb-1 text-xl font-semibold text-center">
-                    Technologies Used
-                  </h3>
-                  <p>
-                    <span className="font-semibold text-lg">
-                      Cross-Platform -{" "}
-                    </span>{" "}
-                    Flutter & React-Native.
-                  </p>
-                  <p>
-                    <span className="font-semibold text-lg">Native - </span>
-                    Kotlin & Java.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="skill mb-5 md:-mt-20 md:w-1/3 md:pt-0">
-            <div className="skill-contents flex flex-col items-center px-5 -mt-10 md:-mt-16 relative">
-              <Image
-                src={"/logos/WhiteOnBlack.png"}
-                alt={"Client Image"}
-                width={250}
-                height={250}
-              />
-              <div className=" p-6 bg-gray-100 text-gray-800 shadow-2xl mx-auto flex-col flex rounded-t-lg">
-                <h2 className="mx-auto text-2xl text-gray-800 pt-14 pb-1 font-semibold uppercase tracking-wider">
-                  Robotics
-                </h2>
-                <p className="text-lg">
-                  With the experience of representing Kenya in the 2019 FIRST
-                  Global Robotics competition, you know that all your automation
-                  needs will be solved with impeccable quality and in record
-                  times as well.
-                </p>
-                <div className="stack">
-                  <h3 className="mt-2 mb-1 text-xl font-semibold text-center">
-                    Platforms Used
-                  </h3>
-                  <p>
-                    <span className="font-semibold text-lg">Automation - </span>
-                    Arduino & other Microcontrollers, Raspberry.
-                  </p>
-                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="divider md:-mt-28">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
-            <path
-              fill="#1f2739"
-              fillOpacity="1"
-              d="M0,224L1440,128L1440,320L0,320Z"
-            ></path>
-          </svg>
+        <div className="skill pt-3 md:w-1/3 md:h-full">
+          <div className="skill-contents text-foreground bg-background flex flex-col items-center px-5  relative">
+            <Image
+              src={"/images/CryptoMobile.png"}
+              alt={"Client Image"}
+              width={350}
+              height={350}
+            />
+            <div className=" p-6 shadow-2xl mx-auto flex-col flex rounded-t-lg">
+              <h2 className="mx-auto text-2xl text-gray-800 pt-14 pb-1 font-semibold uppercase tracking-wider">
+                Mobile Development
+              </h2>
+              <p className="text-lg">
+                Be it writing native code for a single codebase or even
+                cross-platform mobile development, you can rest assured that
+                Denis has got you.
+              </p>
+              <div className="stack">
+                <h3 className="mt-2 mb-1 text-xl font-semibold text-center">
+                  Technologies Used
+                </h3>
+                <p>
+                  <span className="font-semibold text-lg">
+                    Cross-Platform -{" "}
+                  </span>{" "}
+                  Flutter & React-Native.
+                </p>
+                <p>
+                  <span className="font-semibold text-lg">Native - </span>
+                  Kotlin & Java.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+        <div className="skill pt-3 md:w-1/3">
+          <div className="skill-contents text-foreground bg-background flex flex-col items-center px-5  relative">
+            <Image
+              src={"/images/Robotics.png"}
+              alt={"Client Image"}
+              width={350}
+              height={350}
+            />
+            <div className=" p-6 shadow-2xl mx-auto flex-col flex rounded-b-lg">
+              <h2 className="mx-auto text-2xl pt-14 pb-1 font-semibold uppercase tracking-wider">
+                Robotics & Automation
+              </h2>
+              <p className="text-lg">
+                With the experience of representing Kenya in the 2019 FIRST
+                Global Robotics competition, you know that all your automation
+                needs will be solved with impeccable quality and in record times
+                as well.
+              </p>
+              <div className="stack">
+                <h3 className="mt-2 mb-1 text-xl font-semibold text-center">
+                  Platforms Used
+                </h3>
+                <p>
+                  <span className="font-semibold text-lg">Automation - </span>
+                  Arduino & other Microcontrollers, Raspberry.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

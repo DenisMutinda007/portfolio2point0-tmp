@@ -6,8 +6,8 @@ function MobileNavBar({ onHamClick }: { onHamClick: () => void }) {
       <Link className="uppercase underline" onClick={onHamClick} href={"/#services"}>Services</Link>
         <Link className="uppercase underline" onClick={onHamClick} href={"/#toolsNskills"}>Tools/SkillSet</Link>
         <Link className="uppercase underline" onClick={onHamClick} href={"/#projects"}>Projects</Link>
-        <Link className="uppercase underline" onClick={onHamClick} href={"/#experience"}>Experience</Link>
-        <Link className="uppercase underline" onClick={onHamClick} href={"/#blog"}>Blog</Link>
+        {/* <Link className="uppercase underline" onClick={onHamClick} href={"/#experience"}>Experience</Link>
+        <Link className="uppercase underline" onClick={onHamClick} href={"/#blog"}>Blog</Link> */}
         <Link className="uppercase underline" onClick={onHamClick} href={"/contact"}>Contact</Link>
     </div>
   );
