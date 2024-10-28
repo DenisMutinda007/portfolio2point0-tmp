@@ -3,9 +3,8 @@
 @tailwind utilities;
 
 /* Change this for controlling theme on page load - Default theme */
-@media (prefers-color-scheme: light) { 
+@media (prefers-color-scheme: dark) { 
   :root {
-    /* --background: 0 0% 93%; */
     --background: 0 0% 99%;
     --foreground: 210 22% 17%;
   }
@@ -25,7 +24,7 @@ body {
   :root {
     --background: 0 0% 99%;
     --foreground: 210 22% 17%;
-    --card: 0 0% 93%;
+    --card: 0 0% 97%;
     --card-foreground: 210 22% 17%;
     --popover: 0 0% 93%;
     --popover-foreground: 210 22% 17%;
@@ -51,9 +50,9 @@ body {
   }
   .dark {
     --background: 210 22% 17%;
-    --foreground: 0 0% 93%;
+    --foreground: 0 0% 99%;
     --card: 210 22% 17%;
-    --card-foreground: 0 0% 93%;
+    --card-foreground: 0 0% 97%;
     --popover: 210 22% 17%;
     --popover-foreground: 0 0% 93%;
     --primary: 0 0% 93%;
