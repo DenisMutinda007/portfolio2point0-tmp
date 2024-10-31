@@ -3,7 +3,7 @@
 import { buttonVariants } from "@/components/ui/button";
 // import ShinyButton from "@/components/ui/shiny-button";
 import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
-import DenisMutungaMutinda from "@/public/images/Suit.png";
+import DenisMutungaMutinda from "@/public/images/DenisMutinda.png";
 import { EnvelopeOpenIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
